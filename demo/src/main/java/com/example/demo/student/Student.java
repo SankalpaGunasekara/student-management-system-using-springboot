@@ -13,8 +13,8 @@ public class Student {
     public Student() {
     };
 
-    public Student(Long id, String name, String email, Integer age, LocalDate dob) {
-        this.id = id;
+    public Student(Long i, String name, String email, Integer age, LocalDate dob) {
+        this.id = i;
         this.name = name;
         this.email = email;
         this.age = age;
@@ -62,4 +62,8 @@ public class Student {
         this.dob = dob;
     }
 
+    @Override
+    public String toString() {
+        return "Student [age=" + age + ", dob=" + dob + ", email=" + email + ", id=" + id + ", name=" + name + "]";
+    }
 }
